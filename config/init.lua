@@ -3,7 +3,6 @@ local wezterm = require('wezterm')
 ---@class Config
 ---@field options table
 local Config = {}
-Config.enable_scroll_bar = false
 
 ---Initialize Config
 ---@return Config

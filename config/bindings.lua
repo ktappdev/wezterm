@@ -13,8 +13,5 @@ local keys = {
 
 return {
    -- disable_default_key_bindings = true,
-   -- leader = { key = 'Space', mods = 'CTRL|SHIFT' },
    keys = keys,
-   -- key_tables = key_tables,
-   -- mouse_bindings = mouse_bindings,
 }

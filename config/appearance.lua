@@ -14,7 +14,7 @@ return {
    -- background
    background = {
       {
-         source = { File = wezterm.config_dir .. '/backdrops/space.jpg' },
+         source = { File = wezterm.config_dir .. '/backdrops/astro-jelly.jpg' },
       },
       {
          source = { Color = colors.background },
@@ -25,11 +25,11 @@ return {
    },
 
    -- scrollbar
-   enable_scroll_bar = true,
+   enable_scroll_bar = false,
 
    -- tab bar
    enable_tab_bar = true,
-   hide_tab_bar_if_only_one_tab = false,
+   hide_tab_bar_if_only_one_tab = true,
    use_fancy_tab_bar = false,
    tab_max_width = 25,
    show_tab_index_in_tab_bar = false,
