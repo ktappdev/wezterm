@@ -1,48 +1,48 @@
--- A slightly altered version of catppucchin mocha
-local mocha = {
-   rosewater = "#f5e0dc",
-   flamingo = "#f2cdcd",
-   pink = "#f5c2e7",
-   mauve = "#cba6f7",
-   red = "#f38ba8",
-   maroon = "#eba0ac",
-   peach = "#fab387",
-   yellow = "#f9e2af",
-   green = "#a6e3a1",
-   teal = "#94e2d5",
-   sky = "#89dceb",
-   sapphire = "#74c7ec",
-   blue = "#89b4fa",
-   lavender = "#b4befe",
-   text = "#cdd6f4",
-   subtext1 = "#bac2de",
-   subtext0 = "#a6adc8",
-   overlay2 = "#9399b2",
-   overlay1 = "#7f849c",
-   overlay0 = "#6c7086",
-   surface2 = "#585b70",
-   surface1 = "#45475a",
-   surface0 = "#313244",
-   base = "#1f1f28",
-   mantle = "#181825",
-   crust = "#11111b",
+local nord = {
+   snow_storm      = "#eceff4",
+   frost           = "#d8dee9",
+   aurora          = "#e5e9f0",
+   polar_night     = "#2e3440",
+   polar_night_1   = "#3b4252",
+   polar_night_2   = "#434c5e",
+   polar_night_3   = "#4c566a",
+   ice_world       = "#8fbcbb",
+   sea_frost       = "#88c0d0",
+   northern_lights = "#81a1c1",
+   midnight_sun    = "#5e81ac",
+   aurora_glow     = "#bf616a",
+   sunset          = "#d08770",
+   golden_hour     = "#ebcb8b",
+   flora           = "#a3be8c",
+   text            = "#cdd6f4",
+   subtext1        = "#bac2de",
+   subtext0        = "#a6adc8",
+   overlay2        = "#9399b2",
+   overlay1        = "#7f849c",
+   overlay0        = "#6c7086",
+   surface2        = "#585b70",
+   surface1        = "#45475a",
+   surface0        = "#313244",
+   base            = "#1f1f28",
+   mantle          = "#434c5e",
+   crust           = "#4c566a"
 }
 
 local colorscheme = {
-   foreground = mocha.text,
-   background = mocha.base,
-   cursor_bg = mocha.rosewater,
-   cursor_border = mocha.rosewater,
-   cursor_fg = mocha.crust,
-   selection_bg = mocha.surface2,
-   selection_fg = mocha.text,
+   foreground = nord.text,
+   background = nord.base,
+   cursor_bg = nord.rosewater,
+   cursor_border = nord.rosewater,
+   cursor_fg = nord.crust,
+   selection_bg = nord.surface2,
+   selection_fg = nord.text,
    ansi = {
       "#0C0C0C", -- black
       "#C50F1F", -- red
       "#13A10E", -- green
       "#C19C00", -- yellow
-      "#0037DA", -- blue
-      "#881798", -- magenta/purple
+      "#74c7ec", -- blue
+      "#fff798", -- magenta/purple
       "#3A96DD", -- cyan
       "#CCCCCC", -- white
    },
@@ -50,44 +50,44 @@ local colorscheme = {
       "#767676", -- black
       "#E74856", -- red
       "#16C60C", -- green
-      "#F9F1A5", -- yellow
+      "#F931A5", -- yellow
       "#3B78FF", -- blue
-      "#B4009E", -- magenta/purple
+      "#fff09E", -- magenta/purple
       "#61D6D6", -- cyan
       "#F2F2F2", -- white
    },
    tab_bar = {
       background = "#000000",
       active_tab = {
-         bg_color = mocha.surface2,
-         fg_color = mocha.text,
+         bg_color = nord.surface2,
+         fg_color = nord.text,
       },
       inactive_tab = {
-         bg_color = mocha.surface0,
-         fg_color = mocha.subtext1,
+         bg_color = nord.surface0,
+         fg_color = nord.subtext1,
       },
       inactive_tab_hover = {
-         bg_color = mocha.surface0,
-         fg_color = mocha.text,
+         bg_color = nord.surface0,
+         fg_color = nord.text,
       },
       new_tab = {
-         bg_color = mocha.base,
-         fg_color = mocha.text,
+         bg_color = nord.base,
+         fg_color = nord.text,
       },
       new_tab_hover = {
-         bg_color = mocha.mantle,
-         fg_color = mocha.text,
+         bg_color = nord.mantle,
+         fg_color = nord.text,
          italic = true,
       },
    },
-   visual_bell = mocha.surface0,
+   visual_bell = nord.surface0,
    indexed = {
-      [16] = mocha.peach,
-      [17] = mocha.rosewater,
+      [16] = nord.peach,
+      [17] = nord.rosewater,
    },
-   scrollbar_thumb = mocha.surface2,
-   split = mocha.overlay0,
-   compose_cursor = mocha.flamingo, -- nightbuild only
+   scrollbar_thumb = nord.surface2,
+   split = nord.overlay0,
+   compose_cursor = nord.flamingo, -- nightbuild only
 }
 
 return colorscheme

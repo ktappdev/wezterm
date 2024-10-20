@@ -14,13 +14,13 @@ return {
    -- background
    background = {
       {
-         source = { File = wezterm.config_dir .. '/backdrops/astro-jelly.jpg' },
+         source = { File = wezterm.config_dir .. '/backdrops/images/bg2.png' },
       },
       {
          source = { Color = colors.background },
          height = '100%',
          width = '100%',
-         opacity = 0.90,
+         opacity = 1.0,
       },
    },
 
@@ -42,11 +42,11 @@ return {
       top = 12,
       bottom = 7,
    },
-   window_close_confirmation = 'NeverPrompt',
+   -- window_close_confirmation = 'NeverPrompt',
    window_frame = {
       active_titlebar_bg = '#090909',
       -- font = fonts.font,
       -- font_size = fonts.font_size,
    },
-   inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
+   inactive_pane_hsb = { saturation = 1.0, brightness = 0.90 },
 }

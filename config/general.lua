@@ -3,6 +3,8 @@ return {
    automatically_reload_config = true,
    exit_behavior = 'CloseOnCleanExit', -- if the shell program exited with a successful status
    status_update_interval = 1000,
+   window_decorations = 'RESIZE',
+   warn_about_missing_glyphs = false,
 
    scrollback_lines = 5000,
 
